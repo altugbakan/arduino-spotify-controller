@@ -1,0 +1,26 @@
+{
+  "cpu": {
+    "fqbn": "arduino:samd:mkrwifi1010",
+    "name": "Arduino MKR WiFi 1010",
+    "type": "serial"
+  },
+  "secrets": [
+    {
+      "name": "SECRET_SPOTIFY_CLIENT",
+      "value": ""
+    },
+    {
+      "name": "SECRET_SPOTIFY_SECRET",
+      "value": ""
+    },
+    {
+      "name": "SECRET_SSID",
+      "value": ""
+    },
+    {
+      "name": "SECRET_PASS",
+      "value": ""
+    }
+  ],
+  "included_libs": []
+}
