@@ -1,4 +1,3 @@
-#include "arduino_secrets.h"
 #include <ArduinoJson.h> // needed for better memory management, check out https://arduinojson.org/
 #include <ArduinoHttpClient.h>
 #include <Arduino_MKRIoTCarrier.h>
@@ -411,9 +410,9 @@ void updateTrackBar() {
       return;
     }
     carrier.display.drawRect(80, 220, 80, 5, ST77XX_WHITE); // draw track bar
-    int progress = 76 * songProgress / song_length;
-    carrier.display.fillRect(82, 221, progress, 3, ST77XX_WHITE); // draw progress bar
-    carrier.display.fillRect(82 + progress, 221, 76 - progress, 3, ST77XX_BLACK); // draw non progressed part
+    int progress = 78 * songProgress / song_length;
+    carrier.display.fillRect(81, 221, progress, 3, ST77XX_WHITE); // draw progress bar
+    carrier.display.fillRect(81 + progress, 221, 76 - progress, 3, ST77XX_BLACK); // draw unprogressed part
   } else {
     carrier.display.fillRect(80, 220, 80, 5, ST77XX_BLACK); // delete track bar
   }
@@ -501,15 +500,13 @@ void setup() {
   initProperties();
 
   // Connect to Arduino IoT Cloud
-  ArduinoCloud.begin(ArduinoIoTPreferredConnection);
+  ArduinoCloud.begin(ArduinoIoTPreferredConnection, false); // disable watchdog restart
 
   // Add connection callback
   ArduinoIoTPreferredConnection.addCallback(NetworkConnectionEvent::CONNECTED, onNetworkConnect);
 
   // Initialize carrier
-  CARRIER_CASE = true; // if you don't set it to true, your config will get overwritten
-  carrier.Buttons.updateConfig(40); // for all buttons
-  carrier.Buttons.updateConfig(66, TOUCH3); // for button 3, seems more sensitive than others
+  CARRIER_CASE = true; 
   carrier.begin();
   carrier.display.setRotation(0);
 
