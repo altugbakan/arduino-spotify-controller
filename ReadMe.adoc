@@ -3,12 +3,13 @@
 :Revision: version 1
 :License: MIT
 
-= Project: Spotify Arduino Controller
+= Spotify Arduino Controller
 
 Makes you control your Spotify player using your Arduino Oplà IoT kit. Created for #cloudgames2022.
 
+Please check the Project Hub page for more information: https://create.arduino.cc/projecthub/Altug/opla-spotify-controller-6e7bc4
+
 == Step 1: Installation
-0. Please check the Project Hub page for more information: https://create.arduino.cc/projecthub/Altug/opla-spotify-controller-6e7bc4
 1. Enter your WiFi SSID and password to Secret tab
 2. Create an Application on https://developer.spotify.com/dashboard/applications
 3. Enter your Client ID and Client Secret to Secret tab
@@ -40,8 +41,6 @@ This project is released under a {License} License.
 To contribute to this project please open a pull request on GitHub.
 
 === BOM
-Add the bill of the materials you need for this project.
-
 |===
 | ID | Part name              | Part number | Quantity
 | OP | Arduino Oplà IoT Kit   | AKX00026    | 1
