@@ -3,7 +3,7 @@
 :Revision: version 1
 :License: MIT
 
-= Spotify Arduino Controller
+= Arduino Spotify Controller
 
 Makes you control your Spotify player using your Arduino Oplà IoT kit. Created for #cloudgames2022.
 
