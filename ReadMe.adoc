@@ -5,6 +5,8 @@
 
 = Arduino Spotify Controller
 
+This project has won the 3rd place 🥉 award on https://blog.arduino.cc/2022/03/26/top-three-arduino-cloud-games-projects-revealed/[Arduino Cloud Games 2022]!
+
 Makes you control your Spotify player using your Arduino Oplà IoT kit. Created for #cloudgames2022.
 
 Please check the https://create.arduino.cc/projecthub/Altug/opla-spotify-controller-6e7bc4[Arduino Project Hub] page for more information.
@@ -26,7 +28,7 @@ Upload the code contained in this sketch on to your board.
 === Folder structure
 
 ....
- sketch123                    => Arduino sketch folder
+ sketch                       => Arduino sketch folder
   ├── Spotify_Controller.ino  => main Arduino file
   ├── thingProperties.h       => Arduino IoT Cloud properties
   ├── spotifyLogo.h           => Spotify logo image
@@ -35,7 +37,7 @@ Upload the code contained in this sketch on to your board.
 ....
 
 === License
-This project is released under a {License} License.
+This project is released under an {License} License.
 
 === Contributing
 To contribute to this project please open a pull request on GitHub.
