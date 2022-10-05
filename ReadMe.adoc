@@ -5,7 +5,7 @@
 
 = Arduino Spotify Controller
 
-This project has won the 3rd place 🥉 award on https://blog.arduino.cc/2022/03/26/top-three-arduino-cloud-games-projects-revealed/[Arduino Cloud Games 2022]!
+This project has won the 3^rd^ place 🥉 award on https://blog.arduino.cc/2022/03/26/top-three-arduino-cloud-games-projects-revealed/[Arduino Cloud Games 2022]!
 
 Makes you control your Spotify player using your Arduino Oplà IoT kit. Created for #cloudgames2022.
 
